@@ -30,9 +30,9 @@ if __name__ == "__main__":      # Para que este código solo se ejecute cuando e
     try:                         # Manejo de errores
         setpoint = int(sys.argv[1])
     except ValueError:
-        print("\nArgumento inválido: El peso y la altura deben ser valores numéricos\n")
+        print("\nArgumento inválido: Debe ser un valor numérico\n")
         sys.exit(1)                # Termina el programa con un código de error 1
 
     resultado = filtro_ventas(setpoint)
-    print(f"\nLos meses que son mayores son\n{resultado}")
+    print(f"\nLos meses que son mayores son:\n{resultado}")
     
