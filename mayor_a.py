@@ -17,7 +17,7 @@ ventas = {
 
 def filtro_ventas(setpoint):
     meses = {}
-    for mes, valor in ventas.item():
+    for mes, valor in ventas.items():
         if valor > setpoint:
             meses[mes] = valor
     return meses
@@ -33,6 +33,6 @@ if __name__ == "__main__":      # Para que este código solo se ejecute cuando e
         print("\nArgumento inválido: El peso y la altura deben ser valores numéricos\n")
         sys.exit(1)                # Termina el programa con un código de error 1
 
-    resultado = filtro_ventas
-    print(f"\nTu jugaste: {resultado}")
+    resultado = filtro_ventas(setpoint)
+    print(f"\nLos meses que son mayores son\n{resultado}")
     
