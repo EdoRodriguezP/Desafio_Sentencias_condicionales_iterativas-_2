@@ -23,7 +23,7 @@ def filtro_ventas(setpoint):
     return meses
 
 if __name__ == "__main__":      # Para que este código solo se ejecute cuando el script es el programa principal
-    if len(sys.argv) != 2:      # Lista de argumentos pasados por consola / verifica si se ingresaron 2 argumentos
+    if len(sys.argv) != 2:      # Lista de argumentos pasados por consola 
         print("\nUso: python mayor_a.py 'setpoint'")  # si datos no son correctos entra en el bloque imprimiendo instrucciones
         sys.exit(1)             # Termina el programa con un código de error 1
 
@@ -34,5 +34,8 @@ if __name__ == "__main__":      # Para que este código solo se ejecute cuando e
         sys.exit(1)                # Termina el programa con un código de error 1
 
     resultado = filtro_ventas(setpoint)
-    print(f"\nLos meses que son mayores son:\n{resultado}")
     
+    print(f"\nLos meses mayores a {setpoint} son:\n")
+    for mes, valor in resultado.items():
+        print(f"{mes}: {valor}")
+    print()

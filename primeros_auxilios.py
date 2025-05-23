@@ -2,15 +2,16 @@ import sys
 
 
 def cuestionario_ayuda():
+    print()
     print("Primeros Auxilios")
     
     while True:
         
-        print("\nel paciente responde a estimulos")
+        print("\n¿El paciente responde a estimulos?")
         print("\nMarque numero de opcion")
         print("1.- SI")
         print("2.- NO")
-        opcion  = input("ingresa la opcion: ")
+        opcion  = input("Ingresa la opcion: ")
     
         if opcion == "1":
             print("\n****--Valorar la necesidad de llevarlo al hospital mas cercano--*****\n")
@@ -20,11 +21,10 @@ def cuestionario_ayuda():
             
         while True:
         
-            print("\nRespira")
+            print("\n¿El paciente respira?")
             print("\nMarque numero de opcion")
             print("1.- SI")
             print("2.- NO")
-        
             opcion_2 = input("Ingresa la opcion: ")
         
             if opcion_2 == "1":
@@ -35,12 +35,12 @@ def cuestionario_ayuda():
             
             while True:
                 
-                print("\nSignos de Vida")
+                print("\n¿Tiene signos de Vida?")
                 print("\nMarque numero de opcion")
                 print("1.- SI")
                 print("2.- NO")
         
-                opcion_3 = input("ingresa la opcion")
+                opcion_3 = input("Ingresa la opcion: ")
         
                 if opcion_3 == "1":
                     print("\n****--Reevaluar a la espera de la ambulancia--****")
@@ -48,7 +48,7 @@ def cuestionario_ayuda():
                     print("\n****--Administrar compresiones toraxicas hasta que llegue la ambulancia--****")
                 while True:
                 
-                    print("\nLlego la ambulancia")
+                    print("\n¿Llego la ambulancia?")
                     print("\nMarque numero de opcion")
                     print("1.- SI")
                     print("2.- NO")
